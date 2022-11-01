@@ -1,0 +1,1258 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main = Instance.new("ScreenGui")
+local Key = Instance.new("Frame")
+local Top = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Key_2 = Instance.new("TextBox")
+local Enter = Instance.new("TextButton")
+local PlrName = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local GUI1 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local PlayerESP = Instance.new("TextButton")
+local MobESP = Instance.new("TextButton")
+local AutoHeal = Instance.new("TextButton")
+local AutoHeal_2 = Instance.new("TextButton")
+local TpVoid = Instance.new("TextButton")
+local FOV = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Speed = Instance.new("TextButton")
+local Jordans = Instance.new("TextButton")
+local PlayerESP_2 = Instance.new("TextButton")
+local TpVoid_2 = Instance.new("TextButton")
+local Jordans_2 = Instance.new("TextButton")
+local PlantBlood = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local CollectBlood = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local CollectBlood_2 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local Zoom = Instance.new("TextButton")
+local Jordans_3 = Instance.new("TextButton")
+local AutoHeal_3 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local Jordans_4 = Instance.new("TextButton")
+local PlantBlood_2 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local Jordans_5 = Instance.new("TextButton")
+local PlayerESP_3 = Instance.new("TextButton")
+local PlantBlood_3 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local CollectBlood_3 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TpVoid_3 = Instance.new("TextButton")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Main.ResetOnSpawn = false
+
+Key.Name = "Key"
+Key.Parent = Main
+Key.BackgroundColor3 = Color3.fromRGB(244, 244, 0)
+Key.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Key.BorderSizePixel = 5
+Key.Position = UDim2.new(0.0596117377, 0, 0.635902643, 0)
+Key.Size = UDim2.new(0.261785656, 0, 0.253549784, 0)
+
+Top.Name = "Top"
+Top.Parent = Key
+Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Top.BackgroundTransparency = 1.000
+Top.BorderSizePixel = 2
+Top.Size = UDim2.new(0.998671651, 0, 0.0839999691, 0)
+Top.Font = Enum.Font.SourceSansBold
+Top.Text = "AfroGUI | by Vipre & Achnit | V1.0"
+Top.TextColor3 = Color3.fromRGB(0, 0, 0)
+Top.TextScaled = true
+Top.TextSize = 14.000
+Top.TextWrapped = true
+
+Frame.Parent = Key
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.0124833956, 0, 0.0839999691, 0)
+Frame.Size = UDim2.new(1.02114177, 0, 0.0199999921, 0)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0121962242, 0, 0.919989347, 0)
+ImageLabel.Size = UDim2.new(0.312958449, 0, 25.6000004, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=11429557320"
+
+ImageLabel_2.Parent = ImageLabel
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(1.02629077, 0, 0.197500452, 0)
+ImageLabel_2.Size = UDim2.new(0, 258, 0, 80)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=11429617963"
+
+Key_2.Name = "Key"
+Key_2.Parent = Key
+Key_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Key_2.BorderSizePixel = 0
+Key_2.Position = UDim2.new(0, 0, 0.52399981, 0)
+Key_2.Size = UDim2.new(0.998671651, 0, 0.199999928, 0)
+Key_2.Font = Enum.Font.SourceSansBold
+Key_2.PlaceholderText = "Enter Key:"
+Key_2.Text = ""
+Key_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Key_2.TextScaled = true
+Key_2.TextSize = 14.000
+Key_2.TextWrapped = true
+
+Enter.Name = "Enter"
+Enter.Parent = Key
+Enter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Enter.BorderSizePixel = 0
+Enter.Position = UDim2.new(0.249667928, 0, 0.755999744, 0)
+Enter.Size = UDim2.new(0.499335825, 0, 0.175999939, 0)
+Enter.Font = Enum.Font.SourceSansBold
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextWrapped = true
+
+PlrName.Name = "PlrName"
+PlrName.Parent = Key
+PlrName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlrName.BackgroundTransparency = 1.000
+PlrName.Position = UDim2.new(0.498725802, 0, 0.100000322, 0)
+PlrName.Size = UDim2.new(0.499335825, 0, 0.0919999629, 0)
+PlrName.Font = Enum.Font.SourceSansBold
+PlrName.Text = "Welcome Jhon!"
+PlrName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlrName.TextSize = 14.000
+
+TextButton.Parent = Key
+TextButton.BackgroundColor3 = Color3.fromRGB(115, 116, 108)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.833890855, 0, 0.723999739, 0)
+TextButton.Size = UDim2.new(0.164780825, 0, 0.0919999629, 0)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Get Key"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+GUI1.Name = "GUI1"
+GUI1.Parent = Main
+GUI1.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+GUI1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUI1.BorderSizePixel = 5
+GUI1.LayoutOrder = -3
+GUI1.Position = UDim2.new(0.528153479, 0, 0.495943159, 0)
+GUI1.Size = UDim2.new(0.261793226, 0, 0.253549695, 0)
+
+TextLabel.Parent = GUI1
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0021705234, 0, -0.00300000003, 0)
+TextLabel.Size = UDim2.new(1.00166404, 0, 0.100000001, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "AFM GOD"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+PlayerESP.Name = "PlayerESP"
+PlayerESP.Parent = GUI1
+PlayerESP.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+PlayerESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerESP.Position = UDim2.new(-0.0023809094, 0, 0.185439944, 0)
+PlayerESP.Size = UDim2.new(0.310327888, 0, 0.0799999982, 0)
+PlayerESP.Font = Enum.Font.SourceSans
+PlayerESP.Text = "Player ESP"
+PlayerESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerESP.TextScaled = true
+PlayerESP.TextSize = 14.000
+PlayerESP.TextWrapped = true
+
+MobESP.Name = "MobESP"
+MobESP.Parent = GUI1
+MobESP.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+MobESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MobESP.Position = UDim2.new(-0.0023809094, 0, 0.269439936, 0)
+MobESP.Size = UDim2.new(0.310327888, 0, 0.0799999982, 0)
+MobESP.Font = Enum.Font.SourceSans
+MobESP.Text = "Mob ESP"
+MobESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+MobESP.TextScaled = true
+MobESP.TextSize = 14.000
+MobESP.TextWrapped = true
+
+AutoHeal.Name = "AutoHeal"
+AutoHeal.Parent = GUI1
+AutoHeal.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+AutoHeal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoHeal.Position = UDim2.new(0.343500048, 0, 0.513439953, 0)
+AutoHeal.Size = UDim2.new(0.310327888, 0, 0.0799999982, 0)
+AutoHeal.Font = Enum.Font.SourceSans
+AutoHeal.Text = "Q to autoheal"
+AutoHeal.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoHeal.TextScaled = true
+AutoHeal.TextSize = 14.000
+AutoHeal.TextWrapped = true
+
+AutoHeal_2.Name = "AutoHeal"
+AutoHeal_2.Parent = GUI1
+AutoHeal_2.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+AutoHeal_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoHeal_2.Position = UDim2.new(0.343500048, 0, 0.43343994, 0)
+AutoHeal_2.Size = UDim2.new(0.310327888, 0, 0.082560055, 0)
+AutoHeal_2.Font = Enum.Font.SourceSans
+AutoHeal_2.Text = "R toFull heal"
+AutoHeal_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoHeal_2.TextScaled = true
+AutoHeal_2.TextSize = 14.000
+AutoHeal_2.TextWrapped = true
+
+TpVoid.Name = "TpVoid"
+TpVoid.Parent = GUI1
+TpVoid.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+TpVoid.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TpVoid.Position = UDim2.new(-0.00214971509, 0, 0.918608367, 0)
+TpVoid.Size = UDim2.new(0.310096771, 0, 0.0813916028, 0)
+TpVoid.Font = Enum.Font.SourceSans
+TpVoid.Text = "TP to Overworld"
+TpVoid.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpVoid.TextScaled = true
+TpVoid.TextSize = 14.000
+TpVoid.TextWrapped = true
+
+FOV.Name = "FOV"
+FOV.Parent = GUI1
+FOV.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+FOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FOV.Position = UDim2.new(-0.00238087215, 0, 0.349439919, 0)
+FOV.Size = UDim2.new(0.310327888, 0, 0.0799999982, 0)
+FOV.Font = Enum.Font.SourceSans
+FOV.Text = "Set FOV"
+FOV.TextColor3 = Color3.fromRGB(0, 0, 0)
+FOV.TextScaled = true
+FOV.TextSize = 14.000
+FOV.TextWrapped = true
+
+TextBox.Parent = FOV
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Position = UDim2.new(0, 0, 1, 0)
+TextBox.Size = UDim2.new(1, 0, 0.949999988, 0)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+Speed.Name = "Speed"
+Speed.Parent = GUI1
+Speed.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.Position = UDim2.new(-0.00238087215, 0, 0.505439937, 0)
+Speed.Size = UDim2.new(0.310327888, 0, 0.0799999982, 0)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Slope Angle+"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+Jordans.Name = "Jordans"
+Jordans.Parent = GUI1
+Jordans.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+Jordans.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jordans.Position = UDim2.new(-0.00238087215, 0, 0.582608342, 0)
+Jordans.Size = UDim2.new(0.310327888, 0, 0.0839999989, 0)
+Jordans.Font = Enum.Font.SourceSans
+Jordans.Text = "Jordans+"
+Jordans.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jordans.TextScaled = true
+Jordans.TextSize = 14.000
+Jordans.TextWrapped = true
+
+PlayerESP_2.Name = "PlayerESP"
+PlayerESP_2.Parent = GUI1
+PlayerESP_2.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+PlayerESP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerESP_2.Position = UDim2.new(-0.0023809094, 0, 0.105439939, 0)
+PlayerESP_2.Size = UDim2.new(0.310327888, 0, 0.0799999982, 0)
+PlayerESP_2.Font = Enum.Font.SourceSans
+PlayerESP_2.Text = "God ESP"
+PlayerESP_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerESP_2.TextScaled = true
+PlayerESP_2.TextSize = 14.000
+PlayerESP_2.TextWrapped = true
+
+TpVoid_2.Name = "TpVoid"
+TpVoid_2.Parent = GUI1
+TpVoid_2.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+TpVoid_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TpVoid_2.Position = UDim2.new(0.343500048, 0, 0.189439952, 0)
+TpVoid_2.Size = UDim2.new(0.310096562, 0, 0.0799999982, 0)
+TpVoid_2.Font = Enum.Font.SourceSans
+TpVoid_2.Text = "TP to void"
+TpVoid_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpVoid_2.TextScaled = true
+TpVoid_2.TextSize = 14.000
+TpVoid_2.TextWrapped = true
+
+Jordans_2.Name = "Jordans"
+Jordans_2.Parent = GUI1
+Jordans_2.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+Jordans_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jordans_2.Position = UDim2.new(-0.00145860424, 0, 0.836328566, 0)
+Jordans_2.Size = UDim2.new(0.309405625, 0, 0.0822797865, 0)
+Jordans_2.Font = Enum.Font.SourceSans
+Jordans_2.Text = "Anti Fog"
+Jordans_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jordans_2.TextScaled = true
+Jordans_2.TextSize = 14.000
+Jordans_2.TextWrapped = true
+
+PlantBlood.Name = "PlantBlood"
+PlantBlood.Parent = GUI1
+PlantBlood.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+PlantBlood.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlantBlood.Position = UDim2.new(0.737292409, 0, 0.658608437, 0)
+PlantBlood.Size = UDim2.new(0.262185305, 0, 0.0839999989, 0)
+PlantBlood.Font = Enum.Font.SourceSans
+PlantBlood.Text = "Plant Blood"
+PlantBlood.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlantBlood.TextScaled = true
+PlantBlood.TextSize = 14.000
+PlantBlood.TextWrapped = true
+
+TextButton_2.Parent = PlantBlood
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(-0.170731708, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0.162601635, 0, 1, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+CollectBlood.Name = "CollectBlood"
+CollectBlood.Parent = GUI1
+CollectBlood.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+CollectBlood.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CollectBlood.Position = UDim2.new(0.737292409, 0, 0.742608488, 0)
+CollectBlood.Size = UDim2.new(0.262391061, 0, 0.0839999989, 0)
+CollectBlood.Font = Enum.Font.SourceSans
+CollectBlood.Text = "Collect Blood"
+CollectBlood.TextColor3 = Color3.fromRGB(0, 0, 0)
+CollectBlood.TextScaled = true
+CollectBlood.TextSize = 14.000
+CollectBlood.TextWrapped = true
+
+TextButton_3.Parent = CollectBlood
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(-0.170731694, 0, 0, 0)
+TextButton_3.Size = UDim2.new(0.162601635, 0, 1, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "X"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+TextButton_4.Parent = GUI1
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.Position = UDim2.new(0.946121514, 0, -0.00229418953, 0)
+TextButton_4.Size = UDim2.new(0, 21, 0, 21)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "X"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+CollectBlood_2.Name = "CollectBlood"
+CollectBlood_2.Parent = GUI1
+CollectBlood_2.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+CollectBlood_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CollectBlood_2.Position = UDim2.new(0.737292409, 0, 0.830608487, 0)
+CollectBlood_2.Size = UDim2.new(0.262391061, 0, 0.0839999989, 0)
+CollectBlood_2.Font = Enum.Font.SourceSans
+CollectBlood_2.Text = "Auto PlantBox"
+CollectBlood_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+CollectBlood_2.TextScaled = true
+CollectBlood_2.TextSize = 14.000
+CollectBlood_2.TextWrapped = true
+
+TextButton_5.Parent = CollectBlood_2
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.Position = UDim2.new(-0.170731694, 0, 0, 0)
+TextButton_5.Size = UDim2.new(0.162601635, 0, 1, 0)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "X"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+TextButton_6.Parent = GUI1
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 255, 60)
+TextButton_6.Position = UDim2.new(1.0905112, 0, 0.744000018, 0)
+TextButton_6.Size = UDim2.new(0.363310724, 0, 0.0759999976, 0)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Set Waypoint"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 14.000
+
+Zoom.Name = "Zoom+"
+Zoom.Parent = GUI1
+Zoom.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+Zoom.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Zoom.Position = UDim2.new(-0.00238087215, 0, 0.666608393, 0)
+Zoom.Size = UDim2.new(0.310327888, 0, 0.0839999989, 0)
+Zoom.Font = Enum.Font.SourceSans
+Zoom.Text = "Zoom+"
+Zoom.TextColor3 = Color3.fromRGB(0, 0, 0)
+Zoom.TextScaled = true
+Zoom.TextSize = 14.000
+Zoom.TextWrapped = true
+
+Jordans_3.Name = "Jordans"
+Jordans_3.Parent = GUI1
+Jordans_3.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+Jordans_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jordans_3.Position = UDim2.new(-0.00238087215, 0, 0.750608385, 0)
+Jordans_3.Size = UDim2.new(0.310327888, 0, 0.0839999989, 0)
+Jordans_3.Font = Enum.Font.SourceSans
+Jordans_3.Text = "Jordans+"
+Jordans_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jordans_3.TextScaled = true
+Jordans_3.TextSize = 14.000
+Jordans_3.TextWrapped = true
+
+AutoHeal_3.Name = "AutoHeal"
+AutoHeal_3.Parent = GUI1
+AutoHeal_3.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+AutoHeal_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoHeal_3.Position = UDim2.new(0.737292409, 0, 0.914608717, 0)
+AutoHeal_3.Size = UDim2.new(0.262391061, 0, 0.0839999989, 0)
+AutoHeal_3.Font = Enum.Font.SourceSans
+AutoHeal_3.Text = "AutoHeal (Bloodfruit)"
+AutoHeal_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoHeal_3.TextScaled = true
+AutoHeal_3.TextSize = 14.000
+AutoHeal_3.TextWrapped = true
+
+TextButton_7.Parent = AutoHeal_3
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.Position = UDim2.new(-0.170731708, 0, 0, 0)
+TextButton_7.Size = UDim2.new(0.162601635, 0, 1, 0)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "X"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 14.000
+
+Jordans_4.Name = "Jordans"
+Jordans_4.Parent = GUI1
+Jordans_4.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+Jordans_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jordans_4.Position = UDim2.new(0.343500048, 0, 0.351352304, 0)
+Jordans_4.Size = UDim2.new(0.310096562, 0, 0.0832561031, 0)
+Jordans_4.Font = Enum.Font.SourceSans
+Jordans_4.Text = "Anti Fog"
+Jordans_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jordans_4.TextScaled = true
+Jordans_4.TextSize = 14.000
+Jordans_4.TextWrapped = true
+
+PlantBlood_2.Name = "PlantBlood"
+PlantBlood_2.Parent = GUI1
+PlantBlood_2.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+PlantBlood_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlantBlood_2.Position = UDim2.new(0.737292409, 0, 0.570608675, 0)
+PlantBlood_2.Size = UDim2.new(0.262391061, 0, 0.0839999989, 0)
+PlantBlood_2.Font = Enum.Font.SourceSans
+PlantBlood_2.Text = "Drip+"
+PlantBlood_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlantBlood_2.TextScaled = true
+PlantBlood_2.TextSize = 14.000
+PlantBlood_2.TextWrapped = true
+
+TextButton_8.Parent = PlantBlood_2
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.Position = UDim2.new(-0.170731708, 0, 0, 0)
+TextButton_8.Size = UDim2.new(0.162601635, 0, 1, 0)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "X"
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextSize = 14.000
+
+Jordans_5.Name = "Jordans"
+Jordans_5.Parent = GUI1
+Jordans_5.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+Jordans_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jordans_5.Position = UDim2.new(0.343500048, 0, 0.266608417, 0)
+Jordans_5.Size = UDim2.new(0.310096562, 0, 0.0839999989, 0)
+Jordans_5.Font = Enum.Font.SourceSans
+Jordans_5.Text = "Blood Timer"
+Jordans_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jordans_5.TextScaled = true
+Jordans_5.TextSize = 14.000
+Jordans_5.TextWrapped = true
+
+PlayerESP_3.Name = "PlayerESP"
+PlayerESP_3.Parent = GUI1
+PlayerESP_3.BackgroundColor3 = Color3.fromRGB(71, 179, 138)
+PlayerESP_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerESP_3.Position = UDim2.new(0.343268871, 0, 0.105439939, 0)
+PlayerESP_3.Size = UDim2.new(0.310327888, 0, 0.0799999982, 0)
+PlayerESP_3.Font = Enum.Font.SourceSans
+PlayerESP_3.Text = "Quick Log"
+PlayerESP_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerESP_3.TextScaled = true
+PlayerESP_3.TextSize = 14.000
+PlayerESP_3.TextWrapped = true
+
+PlantBlood_3.Name = "PlantBlood"
+PlantBlood_3.Parent = GUI1
+PlantBlood_3.BackgroundColor3 = Color3.fromRGB(179, 0, 0)
+PlantBlood_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlantBlood_3.Position = UDim2.new(0.732246399, 0, 0.182608485, 0)
+PlantBlood_3.Size = UDim2.new(0.262185305, 0, 0.0839999989, 0)
+PlantBlood_3.Font = Enum.Font.SourceSans
+PlantBlood_3.Text = "Plant ALL Blood"
+PlantBlood_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlantBlood_3.TextScaled = true
+PlantBlood_3.TextSize = 14.000
+PlantBlood_3.TextWrapped = true
+
+TextButton_9.Parent = PlantBlood_3
+TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.Position = UDim2.new(-0.170731708, 0, 0, 0)
+TextButton_9.Size = UDim2.new(0.162601635, 0, 1, 0)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "X"
+TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.TextSize = 14.000
+
+CollectBlood_3.Name = "CollectBlood"
+CollectBlood_3.Parent = GUI1
+CollectBlood_3.BackgroundColor3 = Color3.fromRGB(179, 0, 0)
+CollectBlood_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CollectBlood_3.Position = UDim2.new(0.732246399, 0, 0.0986084938, 0)
+CollectBlood_3.Size = UDim2.new(0.262391061, 0, 0.0839999989, 0)
+CollectBlood_3.Font = Enum.Font.SourceSans
+CollectBlood_3.Text = "Collect ALL Blood"
+CollectBlood_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+CollectBlood_3.TextScaled = true
+CollectBlood_3.TextSize = 14.000
+CollectBlood_3.TextWrapped = true
+
+TextButton_10.Parent = CollectBlood_3
+TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.Position = UDim2.new(-0.170731694, 0, 0, 0)
+TextButton_10.Size = UDim2.new(0.162601635, 0, 1, 0)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "X"
+TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.TextSize = 14.000
+
+Frame_2.Parent = GUI1
+Frame_2.BackgroundColor3 = Color3.fromRGB(251, 255, 0)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 5
+Frame_2.Position = UDim2.new(-0.343126774, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, 125, 0, 250)
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 125, 0, 31)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Admin Pannel"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TpVoid_3.Name = "TpVoid"
+TpVoid_3.Parent = Frame_2
+TpVoid_3.BackgroundColor3 = Color3.fromRGB(0, 221, 255)
+TpVoid_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TpVoid_3.Position = UDim2.new(0, 0, 0.105439939, 0)
+TpVoid_3.Size = UDim2.new(0.999999642, 0, 0.0799999982, 0)
+TpVoid_3.Font = Enum.Font.SourceSans
+TpVoid_3.Text = "TP to Private Server"
+TpVoid_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpVoid_3.TextScaled = true
+TpVoid_3.TextSize = 14.000
+TpVoid_3.TextWrapped = true
+
+-- Scripts:
+
+local function OTOU_fake_script() -- Key.KeyMAIN 
+	local script = Instance.new('LocalScript', Key)
+
+	local PlrName = script.Parent.PlrName
+	local Key = script.Parent.Key
+	local Enter = script.Parent.Enter
+	
+	local plr = game.Players.LocalPlayer
+	local Top = script.Parent.Top
+	local Frame = script.Parent.Frame
+	local Main = script.Parent
+	
+	local GUI1 = script.Parent.Parent.GUI1
+	
+	Enter.MouseButton1Click:Connect(function()
+		if Key.Text == "WWW" then
+			Key.Text = "Hello ".. plr.Name.. "!"
+			
+			wait(2)
+		
+			GUI1.Visible = true
+			script.Parent:Destroy()
+		end
+	end)
+	
+	PlrName.Text = "Welcome ".. plr.Name.. " To the AfroGUI!"
+	
+	
+end
+coroutine.wrap(OTOU_fake_script)()
+local function FYGU_fake_script() -- PlayerESP.LocalScript 
+	local script = Instance.new('LocalScript', PlayerESP)
+
+	local Players = game.Players:GetPlayers()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(Players) do
+			if v.Character:FindFirstChild("Esp") then
+				v.Character.Esp:Destroy()
+				
+			else 
+				
+			local Esp = Instance.new("Highlight")
+			Esp.Name = "Esp"
+			Esp.FillTransparency = 1
+			Esp.OutlineColor = Color3.new(1, 0, 0)
+			Esp.OutlineTransparency = 0
+			Esp.Parent = v.Character
+				end
+			end
+		end)
+end
+coroutine.wrap(FYGU_fake_script)()
+local function MJSPSWX_fake_script() -- MobESP.LocalScript 
+	local script = Instance.new('LocalScript', MobESP)
+
+	local Critters = game.Workspace.Critters:GetChildren()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(Critters) do
+			if v:FindFirstChild("Esp") then
+				v.Esp:Destroy()
+				
+			else
+			local Esp = Instance.new("Highlight")
+			Esp.Name = "Esp"
+			Esp.FillTransparency = 1
+			Esp.OutlineColor = Color3.new(0.0156863, 1, 0)
+				Esp.Parent = v	
+				end
+			end
+		end)
+end
+coroutine.wrap(MJSPSWX_fake_script)()
+local function GHRVI_fake_script() -- AutoHeal.LocalScript 
+	local script = Instance.new('LocalScript', AutoHeal)
+
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	function PressQ(key)
+		if (key == "q") then
+	    	game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			end
+		end
+		Mouse.KeyDown:Connect(PressQ)
+	
+end
+coroutine.wrap(GHRVI_fake_script)()
+local function WGPTOQD_fake_script() -- AutoHeal_2.LocalScript 
+	local script = Instance.new('LocalScript', AutoHeal_2)
+
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	function PressQ(key)
+		if (key == "r") then
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+			game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+		end
+	end
+		Mouse.KeyDown:Connect(PressQ)
+end
+coroutine.wrap(WGPTOQD_fake_script)()
+local function BCNC_fake_script() -- TpVoid.LocalScript 
+	local script = Instance.new('LocalScript', TpVoid)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("TeleportService"):Teleport(10758111998)
+	end)
+end
+coroutine.wrap(BCNC_fake_script)()
+local function PTUDVX_fake_script() -- FOV.LocalScript 
+	local script = Instance.new('LocalScript', FOV)
+
+	local plr = game.Players.LocalPlayer
+	local camera = game.Workspace.Camera
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local F = script.Parent.TextBox
+			camera.FieldOfView = F.Text
+		end)
+	
+end
+coroutine.wrap(PTUDVX_fake_script)()
+local function MATVWUC_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		plr.Character.Humanoid.MaxSlopeAngle =  89.9
+	end)
+end
+coroutine.wrap(MATVWUC_fake_script)()
+local function SIQVPHJ_fake_script() -- GUI1.DragScript 
+	local script = Instance.new('LocalScript', GUI1)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(SIQVPHJ_fake_script)()
+local function VLKC_fake_script() -- Jordans.LocalScript 
+	local script = Instance.new('LocalScript', Jordans)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if plr.Character.Humanoid.HipHeight == 6 then
+			plr.Character.Humanoid.HipHeight = 1
+			
+		else
+	
+			plr.Character.Humanoid.HipHeight = 6
+		end
+	end)
+end
+coroutine.wrap(VLKC_fake_script)()
+local function EUQHZQ_fake_script() -- PlayerESP_2.LocalScript 
+	local script = Instance.new('LocalScript', PlayerESP_2)
+
+	local Players = game.Players:GetPlayers()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(Players) do
+			if v.Character["God Chestplate"].Handle:FindFirstChild("Esp") then
+				v.Character["God Chestplate"].Handle.Esp:Destroy()
+				
+			else 
+				
+				if v.Character:FindFirstChild("God Chestplate") then
+			local Esp = Instance.new("Highlight")
+			Esp.Name = "Esp"
+			Esp.FillTransparency = 0
+			Esp.FillColor = Color3.new(0.984314, 1, 0)
+			Esp.OutlineColor = Color3.new(0.917647, 1, 0)
+					Esp.Parent = v.Character["God Chestplate"].Handle 
+				end
+			end
+		end
+		
+	end)
+	
+end
+coroutine.wrap(EUQHZQ_fake_script)()
+local function KHDNCSP_fake_script() -- PlayerESP_2.LocalScript 
+	local script = Instance.new('LocalScript', PlayerESP_2)
+
+	local Players = game.Players:GetPlayers()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(Players) do
+			if v.Character["God Legs Left Leg"].Handle:FindFirstChild("Esp") then
+				v.Character["God Legs Left Leg"].Handle.Esp:Destroy()
+				
+			else 
+				if v.Character:FindFirstChild("God Legs Left Leg") then
+				local Esp = Instance.new("Highlight")
+				Esp.Name = "Esp"
+				Esp.FillTransparency = 0
+				Esp.FillColor = Color3.new(0.984314, 1, 0)
+				Esp.OutlineColor = Color3.new(0.917647, 1, 0)
+					Esp.Parent = v.Character["God Legs Left Leg"].Handle
+				end
+			end
+		end
+		
+	end)
+	
+end
+coroutine.wrap(KHDNCSP_fake_script)()
+local function XHBAEJ_fake_script() -- PlayerESP_2.LocalScript 
+	local script = Instance.new('LocalScript', PlayerESP_2)
+
+	local Players = game.Players:GetPlayers()
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(Players) do
+			if v.Character["God Legs Right Leg"].Handle:FindFirstChild("Esp") then
+				v.Character["God Legs Right Leg"].Handle.Esp:Destroy()
+				
+			else 
+				if v.Character:FindFirstChild("God Legs Right Leg") then
+				local Esp = Instance.new("Highlight")
+				Esp.Name = "Esp"
+				Esp.FillTransparency = 0
+				Esp.FillColor = Color3.new(0.984314, 1, 0)
+				Esp.OutlineColor = Color3.new(0.917647, 1, 0)
+					Esp.Parent = v.Character["God Legs Right Leg"].Handle
+					
+					
+				end
+			end
+		end
+		
+	end)
+	
+end
+coroutine.wrap(XHBAEJ_fake_script)()
+local function NLYWEN_fake_script() -- TpVoid_2.LocalScript 
+	local script = Instance.new('LocalScript', TpVoid_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	game:GetService("TeleportService"):Teleport(10767870749)
+	end)
+end
+coroutine.wrap(NLYWEN_fake_script)()
+local function KNZOC_fake_script() -- Jordans_2.LocalScript 
+	local script = Instance.new('LocalScript', Jordans_2)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if game.Lighting.FogEnd == 9999999 then
+			game.Lighting.FogEnd = 2000
+			
+		else 
+			
+			game.Lighting.FogEnd = 9999999 
+		end
+	end)
+end
+coroutine.wrap(KNZOC_fake_script)()
+local function BEPZZXI_fake_script() -- PlantBlood.LocalScript 
+	local script = Instance.new('LocalScript', PlantBlood)
+
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if script.Parent.TextButton.Text == "✓" then
+			while true do
+				wait(0.4)
+				if script.Parent.TextButton.Text == "✓" then
+	for _, v in pairs(workspace.Deployables:GetChildren()) do
+		if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 25 then
+							game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Bloodfruit")
+						end
+					end
+				end
+			end
+		end
+	end)
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+	
+		if script.Parent.TextButton.Text == "X" then
+			script.Parent.TextButton.Text = "✓"
+	
+		else if script.Parent.TextButton.Text == "✓" then
+				script.Parent.TextButton.Text = "X"
+			end
+		end
+	end)
+end
+coroutine.wrap(BEPZZXI_fake_script)()
+local function VTAB_fake_script() -- CollectBlood.LocalScript 
+	local script = Instance.new('LocalScript', CollectBlood)
+
+	local Player = game.Players.LocalPlayer
+	
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if script.Parent.TextButton.Text == "✓" then
+			while true do
+				wait(0.3)
+				if script.Parent.TextButton.Text == "✓" then
+		for _, v in pairs(workspace:GetChildren()) do
+			if v.Name == "Bloodfruit Bush" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 25 then
+							game.ReplicatedStorage.Events.Pickup:FireServer(v)
+						end
+					end
+				end
+			end
+		end
+	end)
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+	
+	if script.Parent.TextButton.Text == "X" then
+		script.Parent.TextButton.Text = "✓"
+		
+	else if script.Parent.TextButton.Text == "✓" then
+				script.Parent.TextButton.Text = "X"
+			end
+		end
+	end)
+end
+coroutine.wrap(VTAB_fake_script)()
+local function IMSLAJ_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(IMSLAJ_fake_script)()
+local function JLXFJY_fake_script() -- CollectBlood_2.LocalScript 
+	local script = Instance.new('LocalScript', CollectBlood_2)
+
+	local Player = game.Players.LocalPlayer
+	
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if script.Parent.TextButton.Text == "✓" then
+			while true do
+				wait(0.05)
+				if script.Parent.TextButton.Text == "✓" then
+				local LocalPlayer = game:GetService("Players").LocalPlayer
+				local RootPart = LocalPlayer.Character.HumanoidRootPart
+				local cframe = RootPart.CFrame
+				local Remote = game:GetService("ReplicatedStorage").Events.PlaceStructure
+	
+					Remote:FireServer("Plant Box", cframe * CFrame.new(-0, -3, -0), 0)
+				end
+			end
+		end
+	end)
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+	
+	if script.Parent.TextButton.Text == "X" then
+		script.Parent.TextButton.Text = "✓"
+		
+	else if script.Parent.TextButton.Text == "✓" then
+				script.Parent.TextButton.Text = "X"
+			end
+		end
+	end)
+end
+coroutine.wrap(JLXFJY_fake_script)()
+local function CGGT_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local Plr = game.Players.LocalPlayer
+	local Name = 1
+	local F = Instance.new("Folder")
+	F.Parent = workspace
+	F.Name = "VipreFarms"
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local I = Instance.new("Part")
+		
+		I.Parent = F
+		I.CanCollide = false
+		I.Anchored = true
+		I.Transparency = 0.9
+		I.BrickColor = BrickColor.new("Really red")
+		I.Position = Plr.Character.HumanoidRootPart.Position
+		I.Name = Name
+		
+		Name = Name + 1
+	end)
+end
+coroutine.wrap(CGGT_fake_script)()
+local function DTSWN_fake_script() -- Zoom.LocalScript 
+	local script = Instance.new('LocalScript', Zoom)
+
+	local plr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		if plr.CameraMaxZoomDistance == 99999999999 then
+			plr.CameraMaxZoomDistance = 400
+			
+		else 
+			if plr.CameraMaxZoomDistance == 400 then
+				plr.CameraMaxZoomDistance = 99999999999
+			end
+		end
+	end)
+end
+coroutine.wrap(DTSWN_fake_script)()
+local function KEYYRUA_fake_script() -- Jordans_3.LocalScript 
+	local script = Instance.new('LocalScript', Jordans_3)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local I = Instance.new("Part")
+		
+		I.CFrame = plr.Character.HumanoidRootPart.CFrame
+	end)
+end
+coroutine.wrap(KEYYRUA_fake_script)()
+local function OVGJUZ_fake_script() -- AutoHeal_3.LocalScript 
+	local script = Instance.new('LocalScript', AutoHeal_3)
+
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if script.Parent.TextButton.Text == "✓" then
+			while true do
+				wait(0.01)
+				if script.Parent.TextButton.Text == "✓" then
+					if Player.Character.Humanoid.Health < 100 then
+						game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer("Bloodfruit")
+					end
+					
+				end
+			end
+		end
+	end)
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+	
+		if script.Parent.TextButton.Text == "X" then
+			script.Parent.TextButton.Text = "✓"
+	
+		else if script.Parent.TextButton.Text == "✓" then
+				script.Parent.TextButton.Text = "X"
+			end
+		end
+	end)
+end
+coroutine.wrap(OVGJUZ_fake_script)()
+local function DBWDEPY_fake_script() -- Jordans_4.LocalScript 
+	local script = Instance.new('LocalScript', Jordans_4)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		plr.TeamColor = BrickColor.new("Warm yellowish orange")
+	end)
+end
+coroutine.wrap(DBWDEPY_fake_script)()
+local function DDZGK_fake_script() -- PlantBlood_2.LocalScript 
+	local script = Instance.new('LocalScript', PlantBlood_2)
+
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if script.Parent.TextButton.Text == "✓" then
+			repeat
+				wait(0.05)
+				if script.Parent.TextButton.Text == "✓" then
+	
+				Player.Character["God Chestplate"].Handle.BrickColor = BrickColor.Random()
+				Player.Character["God Halo"].Handle.BrickColor = BrickColor.Random()
+				Player.Character["God Left Shoulder"].Handle.BrickColor = BrickColor.Random()
+				Player.Character["God Legs Left Leg"].Handle.BrickColor = BrickColor.Random()
+				Player.Character["God Legs Left Foot"].Handle.BrickColor = BrickColor.Random()
+				Player.Character["God Legs Right Leg"].Handle.BrickColor = BrickColor.Random()
+				Player.Character["God Legs Right Foot"].Handle.BrickColor = BrickColor.Random()
+				Player.Character["God Right Shoulder"].Handle.BrickColor = BrickColor.Random()
+					Player.Character["God Rock"].Part.Handle.BrickColor = BrickColor.Random()
+					
+					end
+				
+			until
+			
+			print("W")
+			
+			end
+		end)
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+	
+		if script.Parent.TextButton.Text == "X" then
+			script.Parent.TextButton.Text = "✓"
+	
+		else if script.Parent.TextButton.Text == "✓" then
+				script.Parent.TextButton.Text = "X"
+			end
+		end
+	end)
+end
+coroutine.wrap(DDZGK_fake_script)()
+local function STSF_fake_script() -- Jordans_5.LocalScript 
+	local script = Instance.new('LocalScript', Jordans_5)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		plr.TeamColor = BrickColor.new("Warm yellowish orange")
+	end)
+end
+coroutine.wrap(STSF_fake_script)()
+local function UCUWGFK_fake_script() -- PlayerESP_3.LocalScript 
+	local script = Instance.new('LocalScript', PlayerESP_3)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		plr:Kick("Logged")
+	end)
+end
+coroutine.wrap(UCUWGFK_fake_script)()
+local function CZLHWWQ_fake_script() -- PlantBlood_3.LocalScript 
+	local script = Instance.new('LocalScript', PlantBlood_3)
+
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if script.Parent.TextButton.Text == "✓" then
+			while true do
+				wait(0.4)
+				if script.Parent.TextButton.Text == "✓" then
+	for _, v in pairs(workspace.Deployables:GetChildren()) do
+		if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 9999 then
+							game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Bloodfruit")
+						end
+					end
+				end
+			end
+		end
+	end)
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+	
+		if script.Parent.TextButton.Text == "X" then
+			script.Parent.TextButton.Text = "✓"
+	
+		else if script.Parent.TextButton.Text == "✓" then
+				script.Parent.TextButton.Text = "X"
+			end
+		end
+	end)
+end
+coroutine.wrap(CZLHWWQ_fake_script)()
+local function AYXUAX_fake_script() -- CollectBlood_3.LocalScript 
+	local script = Instance.new('LocalScript', CollectBlood_3)
+
+	local Player = game.Players.LocalPlayer
+	
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if script.Parent.TextButton.Text == "✓" then
+			while true do
+				wait(0.3)
+				if script.Parent.TextButton.Text == "✓" then
+		for _, v in pairs(workspace:GetChildren()) do
+			if v.Name == "Bloodfruit Bush" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 9999 then
+							game.ReplicatedStorage.Events.Pickup:FireServer(v)
+						end
+					end
+				end
+			end
+		end
+	end)
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+	
+	if script.Parent.TextButton.Text == "X" then
+		script.Parent.TextButton.Text = "✓"
+		
+	else if script.Parent.TextButton.Text == "✓" then
+				script.Parent.TextButton.Text = "X"
+			end
+		end
+	end)
+end
+coroutine.wrap(AYXUAX_fake_script)()
+local function ZJLZ_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local plr = game.Players.LocalPlayer
+	
+	if plr.Name == "AchnitX , VipreDEV" then
+		script.Parent.Visible = true
+		
+	else
+		
+		script.Parent:Destroy()
+	end
+end
+coroutine.wrap(ZJLZ_fake_script)()
+local function LVQGL_fake_script() -- TpVoid_3.LocalScript 
+	local script = Instance.new('LocalScript', TpVoid_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("TeleportService"):Teleport(10758111998)
+	end)
+end
+coroutine.wrap(LVQGL_fake_script)()
